@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<title>Website-Design</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body >
+	<div class="menu-bar">
+		<ul>
+			<li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+				<li><a href="#"><i class="fa-solid fa-users"></i>About Us</a>
+					<div class="sub-menu-1">
+						<ul>
+							<li><a href="#">Mission</a></li>
+							<li><a href="#">Vision</a></li>
+							<li><a href="#">Team</a></li>
+						</ul>
+					</div>
+				</li>
+			<li><a href="#"><i class="fa fa-clone"></i>Services</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Web Designing</a></li>
+							<li class="hover-me"><a href="#">Marketting</a><i class="fa fa-angle-right"></i>
+								<div class="sub-menu-2">
+									<ul>
+										<li><a href="#">SEO</a></li>
+										<li><a href="#">Social Media</a></li>
+										<li><a href="#">Email Marketting</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+								<div class="sub-menu-2">
+									<ul>
+										<li><a href="#">Android App</a></li>
+										<li><a href="#">IOS App</a></li>
+										<li><a href="#">Ionic App</a></li>
+										<li><a href="#">Flutter App</a></li>
+										<li><a href="#">Unity App</a></li>
+									</ul>
+								</div>
+							</li>
+					</ul>
+				</div>
+			</li>
+<li><a href="#"><i class="fa-solid fa-users"></i>Clinets</a></li>
+<li><a href="#"><i class="fa-brands fa-angellist"></i>Investers</a></li>
+<li><a href="#"><i class="fa-solid fa-indian-rupee-sign"></i>Pricing</a></li>
+<li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Training</a></li>
+<li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+</ul>
+
+</div>
+<div class="hero">
+<div class="form-box">
+<div class="button-box">
+<div id="btn"></div>
+<button type="button" class="toggle-btn" onclick="login()">Login</button>
+<button type="button" class="toggle-btn" onclick="register()">Register</button>
+</div>
+<div class="Social-Icons">
+<a href="https://www.facebook.com/login/" target="_blank"><img src="fb.png"></a>
+<a href="https://www.google.com/" target="_blank"><img src="g1.png"></a>
+<a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="inst.png"></a> 
+</div>
+<div>
+<form id="login" class="input-group" onsubmit="callback1()">
+<input type="email" id="email"class="input-field" placeholder=" Enter Email Id" maxlength="15" required>
+<input type="password" id="psw" class="input-field" placeholder="Enter Password" maxlength="8" required>
+<input type="checkbox" class="check-box"><span>Remember password</span>
+<div>
+<span class="psw">Forgot password <a href="#" style="color:white;">password </a></span>
+</div>
+<button type="submit"class="submit-btn">Login</button>
+</form>
+</div>
+<div>
+<form id="register" class="input-group">
+<input type="text" class="input-field" placeholder="User Name" required>
+<input type="email" class="input-field" placeholder="Email Id" required>
+<input type="password" class="input-field" placeholder="Enter Password" required>
+<input type="password" class="input-field" placeholder="Confirm Password" required>
+<input type="checkbox" class="check-box"><span>I agree to the trems & conditions</span>
+<button type="submit"class="submit-btn">Register</button>
+</form>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+function callback1(){
+	var email =document.getElementById("email").value;
+	var password =document.getElementById("psw").value;
+	document.writeln("your email:"+email);
+	document.writeln("your password:"+psw);
+}
+</script>
+<script>
+var x= document.getElementById("login");
+var y= document.getElementById("register");
+var z= document.getElementById("btn");
+function register(){
+	x.style.left = "-400px"; 
+	y.style.left = "50px";
+	z.style.left = "110px";
+}
+function login(){
+	x.style.left = "50px"; 
+	y.style.left = "450px";
+	z.style.left = "0";
+}
+</script>
+</body>
+</html>
